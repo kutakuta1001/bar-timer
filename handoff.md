@@ -29,3 +29,4 @@
 2026-11-22: キングジム VBT20 を参考にした iPhone 横置き用バータイマー（Web アプリ）を新規作成し、公開リポジトリ `kutakuta1001/bar-timer` の GitHub Pages（https://kutakuta1001.github.io/bar-timer/）で公開。計算テスト 13 件と WebKit での操作確認 13 件が通過し、2 コミット（先頭 `b681a65`）をプッシュ済み。次: iPhone 実機でホーム画面に追加し、音・常時点灯・なぞりの感度の 3 点を確かめる。
 2026-11-23: NOCTA の HP の Yori に Bar Timer の紹介ページとカードを追加して公開（NOCTA-studio の bef83da）。次: 変わらず iPhone 実機での確認 3 点。
 2026-11-23: 名前を Bar Timer に統一し、NOCTA の紹介ページへのリンクを追加（CACHE v2）。実機確認は CEO が済ませた。次: ホーム画面のアイコンを追加し直す。
+2026-11-23: セッション締め。本日分（Yori への掲載・名前の統一・NOCTA へのリンク、先頭 82b5a45）はすべて push 済みで、実機確認も完了。次: なし（完結）。iPhone のアイコンを追加し直すのは CEO の手元作業のみ。
