@@ -2,13 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>バータイマー</title>
+<title>Bar Timer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#000000">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="バータイマー">
+<meta name="apple-mobile-web-app-title" content="Bar Timer">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/icon-180.png">
 <link rel="icon" href="icons/icon-192.png">
@@ -105,6 +105,17 @@
     color: var(--ink);
   }
   .toggles button[aria-pressed="false"] b { color: var(--mute); }
+  /* NOCTA の紹介ページへ戻るリンク。計測中は押し間違えないよう見せない（場所は空けたまま） */
+  .about {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: var(--mute);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .about:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+  body:not([data-status="idle"]) .about { visibility: hidden; }
 
   /* ---- 中段: 残り時間の数字 ---- */
   .readout {
@@ -343,6 +354,7 @@
       <button type="button" id="t-half" aria-pressed="true">半分で通知<b>オン</b></button>
       <button type="button" id="t-sound" aria-pressed="true">音<b>オン</b></button>
       <button type="button" id="t-dim" aria-label="明るさを切り替える">明るさ<b>3</b></button>
+      <a class="about" href="https://kutakuta1001.github.io/NOCTA/bar-timer/" target="_blank" rel="noopener" aria-label="Bar Timer の紹介（NOCTA）を開く">NOCTA ↗</a>
     </div>
   </header>
 

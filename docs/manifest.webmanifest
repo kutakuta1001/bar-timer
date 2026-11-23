@@ -1,6 +1,6 @@
 {
-  "name": "バータイマー",
-  "short_name": "バータイマー",
+  "name": "Bar Timer",
+  "short_name": "Bar Timer",
   "description": "残り時間を 4 色の目盛りで見せる卓上タイマー",
   "lang": "ja",
   "start_url": "./",

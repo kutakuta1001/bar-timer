@@ -2,7 +2,7 @@
  * オフラインでも開けるよう、アプリ一式を端末に保存しておく。
  * 中身を更新したら CACHE の番号を上げる（古い保存分が消える）。
  */
-const CACHE = 'bar-timer-v1';
+const CACHE = 'bar-timer-v2';
 const ASSETS = [
   './',
   './index.html',
